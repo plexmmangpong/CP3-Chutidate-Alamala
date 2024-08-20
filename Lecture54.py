@@ -28,7 +28,7 @@ def Menu_Selected():
         print(VatCaculation(int(input("Enter Price(TH-Baht):"))),"฿")
         
     if userSelected == 2:
-        Price()
+        print(Price(),"฿")
                      
 def VatCaculation(price):
     vat = 7
@@ -36,9 +36,8 @@ def VatCaculation(price):
     return result
        
 def Price():
-    clearscreen()
     price1 = int(input("First Product Price : "))
     price2 = int(input("Second Product Price : "))
-    print(VatCaculation(price1+price2),"฿")
+    return VatCaculation(price1+price2)
     
 login()    
